@@ -17,7 +17,7 @@ import CoreLocation
  6. in viewidload add delegate to self and accuracy
  7-8. add locationManager function of didUpdateLocations and didFailWithError function
  9. if want get address write a function which uses CLGeocoder and get the reversed address
- 10. if want update location automatically, use significantLocationChangeMonitoringAvailable function
+ 10. if want update location automatically, use significantLocationChangeMonitoringAvailable functions
  */
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
