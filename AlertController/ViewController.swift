@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         let cancelButton = UIAlertAction(title: "Cancel", style: .cancel){ action in
             print("Cancel Button Pressed")
         }
-        // add to alertController
+        // add to the alertController
         alertController.addAction(okButton)
         alertController.addAction(cancelButton)
         alertController.addTextField { txtField in
