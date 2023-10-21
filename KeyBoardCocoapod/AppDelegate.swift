@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import IQKeyboardManagerSwift
+import IQKeyboardManagerSwift // keyboard
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
