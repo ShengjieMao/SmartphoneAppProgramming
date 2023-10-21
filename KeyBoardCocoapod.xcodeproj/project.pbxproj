@@ -13,6 +13,7 @@
 		00498E472AE3CACB004CDBD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00498E452AE3CACB004CDBD9 /* Main.storyboard */; };
 		00498E492AE3CACE004CDBD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00498E482AE3CACE004CDBD9 /* Assets.xcassets */; };
 		00498E4C2AE3CACE004CDBD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00498E4A2AE3CACE004CDBD9 /* LaunchScreen.storyboard */; };
+		007D3EFC7CB05EAC7B02AF26 /* Pods_KeyBoardCocoapod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2EF5F2CB097AC336EAA85E2 /* Pods_KeyBoardCocoapod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		00498E482AE3CACE004CDBD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00498E4B2AE3CACE004CDBD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00498E4D2AE3CACE004CDBD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4617336A17D59782EA8F0BF9 /* Pods-KeyBoardCocoapod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyBoardCocoapod.debug.xcconfig"; path = "Target Support Files/Pods-KeyBoardCocoapod/Pods-KeyBoardCocoapod.debug.xcconfig"; sourceTree = "<group>"; };
+		62554D61A81A48F8DBB457D5 /* Pods-KeyBoardCocoapod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyBoardCocoapod.release.xcconfig"; path = "Target Support Files/Pods-KeyBoardCocoapod/Pods-KeyBoardCocoapod.release.xcconfig"; sourceTree = "<group>"; };
+		E2EF5F2CB097AC336EAA85E2 /* Pods_KeyBoardCocoapod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyBoardCocoapod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007D3EFC7CB05EAC7B02AF26 /* Pods_KeyBoardCocoapod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				00498E3E2AE3CACB004CDBD9 /* KeyBoardCocoapod */,
 				00498E3D2AE3CACB004CDBD9 /* Products */,
+				4F436E1ED11DFAC0A116DFE9 /* Pods */,
+				01928CE722881BB79D776AFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = KeyBoardCocoapod;
 			sourceTree = "<group>";
 		};
+		01928CE722881BB79D776AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2EF5F2CB097AC336EAA85E2 /* Pods_KeyBoardCocoapod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F436E1ED11DFAC0A116DFE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4617336A17D59782EA8F0BF9 /* Pods-KeyBoardCocoapod.debug.xcconfig */,
+				62554D61A81A48F8DBB457D5 /* Pods-KeyBoardCocoapod.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00498E502AE3CACE004CDBD9 /* Build configuration list for PBXNativeTarget "KeyBoardCocoapod" */;
 			buildPhases = (
+				0A6BFEB59C9FF52B91976420 /* [CP] Check Pods Manifest.lock */,
 				00498E382AE3CACB004CDBD9 /* Sources */,
 				00498E392AE3CACB004CDBD9 /* Frameworks */,
 				00498E3A2AE3CACB004CDBD9 /* Resources */,
+				DA409D60F77EE1ED893B3CE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A6BFEB59C9FF52B91976420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeyBoardCocoapod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA409D60F77EE1ED893B3CE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeyBoardCocoapod/Pods-KeyBoardCocoapod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeyBoardCocoapod/Pods-KeyBoardCocoapod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KeyBoardCocoapod/Pods-KeyBoardCocoapod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00498E382AE3CACB004CDBD9 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		00498E512AE3CACE004CDBD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4617336A17D59782EA8F0BF9 /* Pods-KeyBoardCocoapod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		00498E522AE3CACE004CDBD9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62554D61A81A48F8DBB457D5 /* Pods-KeyBoardCocoapod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
